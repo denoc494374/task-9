@@ -1,0 +1,71 @@
+
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .card {
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            border: none;
+        }
+
+        .card-title {
+            color: #667eea;
+            margin-bottom: 1rem;
+        }
+
+        .card-text {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .btn {
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn:active {
+            transform: translateY(0);
+        }
+
+        .badge-container {
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        #levelBadge {
+            font-size: 1.5rem;
+            padding: 0.5rem 1rem;
+        }
+
+        #levelText {
+            margin-top: 0.5rem;
+            font-weight: 500;
+            color: #667eea;
+        }
+
+        .btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        .btn:disabled:hover {
+            transform: none;
+            box-shadow: none;
+        }
+
+        .btn.disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            pointer-events: none;
+        }
+
+        .btn.disabled:hover {
+            transform: none;
+            box-shadow: none;
+        }
