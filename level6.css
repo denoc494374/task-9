@@ -1,0 +1,64 @@
+body {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+}
+
+.card {
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+    border: none;
+}
+
+.card-title { color: #667eea; }
+.card-text { color: #666; }
+
+.doors .door-btn {
+    width: 160px;
+    min-height: 220px;
+    border-radius: 10px;
+    font-size: 1.05rem;
+    font-weight: 600;
+    background: linear-gradient(180deg,#ffffff,#f8f8f8);
+    border: 2px solid #ddd;
+    transition: transform 0.18s ease, box-shadow 0.18s ease;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.doors .door-btn:hover:not(.disabled) { transform: translateY(-6px); box-shadow: 0 8px 20px rgba(0,0,0,0.12); }
+
+.doors .door-btn.disabled { opacity: 0.6; cursor: not-allowed; pointer-events: none; }
+
+#resultMessage { margin-top: 0.5rem; }
+
+.alert-reveal {
+    animation: pop 260ms ease;
+}
+
+@keyframes pop {
+    0% { transform: scale(0.9); opacity: 0; }
+    60% { transform: scale(1.03); opacity: 1; }
+    100% { transform: scale(1); }
+}
+
+/* door image and label styling */
+.door-img {
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+    border-radius: 6px;
+    background: transparent;
+}
+
+.door-label {
+    margin-top: 8px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.doors .door-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
