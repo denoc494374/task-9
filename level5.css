@@ -89,6 +89,10 @@ body {
     align-items: center;
     justify-content: center;
 }
+#nextBtn{
+    flex: 1;
+    
+}
 
 .counter-buttons .btn-success {
     background-color: #28a745;
@@ -115,4 +119,7 @@ body {
     padding: 0.5rem;
     border-radius: 8px;
     transition: all 0.3s ease;
+    color: #666;
+    font-weight: 500;
+    margin-bottom: 1rem;
 }
